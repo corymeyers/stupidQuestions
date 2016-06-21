@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: "AIzaSyCUQYpA-cOlWU8MU3FXysdV5fTTuGBijYQ",
+      authDomain: "stupidquestions-6e0fa.firebaseapp.com",
+      databaseURL: "https://stupidquestions-6e0fa.firebaseio.com",
+      storageBucket: "",
+    },
     modulePrefix: 'stupid-questions',
     environment: environment,
     baseURL: '/',
