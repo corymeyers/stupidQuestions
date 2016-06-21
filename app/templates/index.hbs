@@ -3,9 +3,19 @@
 We hope this code works so I don't have to do it a tenth time..
 
 <ul>
-  {{#each model as |answer|}}
+  {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}
 </ul>
 
 {{new-answer save2="save3"}}
+
+<h2> questions </h2>
+
+<ul>
+  {{#each model.questions as |question|}}
+    <li>{{question.head}}{{question.author}}{{question.detail}}</li>
+  {{/each}}
+</ul>
+
+<hr>

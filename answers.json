@@ -11,5 +11,14 @@
     "author": "Chairface",
     "corpse": "Something borrowed",
     "question": "what's that?"
+  }],
+  "questions": [{
+    "head": "what's that?",
+    "author": "Momo",
+    "detail": "nono"
+  }, {
+    "head": "what flavor?",
+    "author": "Oosa",
+    "detail": "nonot"
   }]
 }
