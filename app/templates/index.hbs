@@ -14,8 +14,14 @@ We hope this code works so I don't have to do it a tenth time..
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{question.head}}{{question.author}}{{question.detail}}</li>
+    <li>{{#link-to 'question' question.id}}
+      {{question.head}}{{question.author}}
+      {{question.detail}}
+      {{/link-to}}
+    </li>
   {{/each}}
 </ul>
+
+{{new-question saveQ="saveQ"}}
 
 <hr>
