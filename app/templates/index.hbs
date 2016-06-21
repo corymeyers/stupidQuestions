@@ -4,6 +4,8 @@ We hope this code works so I don't have to do it a tenth time..
 
 <ul>
   {{#each model as |answer|}}
-     <li>{{answer.question}}  {{answer.corpse}} answered by {{answer.author}}</li>
+    {{answer-tile answer=answer}}
   {{/each}}
 </ul>
+
+{{new-answer save2="save3"}}
