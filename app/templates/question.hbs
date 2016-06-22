@@ -1,6 +1,15 @@
 
-<h1> Welcome to {{model.head}} </h1>
+<h1>{{model.head}} </h1>
 
+
+
+
+
+{{question-tile question=model update="update"}}
+<hr>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
 {{new-answer save2="save3" question=model}}
-
-{{question-tile question=model }}

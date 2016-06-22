@@ -1,23 +1,20 @@
 <h1> Welcome to Stupid Questions </h1>
 
-We hope this code works so I don't have to do it a tenth time..
+Click on a question to alter or answer it, or start a new question of your own.
 
-<ul>
+<!-- <ul>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}
 </ul>
 
-{{new-answer save2="save3"}}
-
-<h2> questions </h2>
+{{new-answer save2="save3"}} -->
 
 <ul>
   {{#each model.questions as |question|}}
     <li>{{#link-to 'question' question.id}}
-      {{question.head}}{{question.author}}
-      {{question.detail}}
-      {{/link-to}}
+        {{question-tile question=question update="update"}}
+        {{/link-to}}
     </li>
   {{/each}}
 </ul>
